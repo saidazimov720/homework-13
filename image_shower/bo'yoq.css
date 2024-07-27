@@ -26,3 +26,20 @@ input[type="text"]{
     border-radius: 4px;
     font-size: 16px;
 }
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: whitesmoke;
+    background-color: lightblue;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3;
+}
+button:hover{
+background-color: rgb(126, 126, 208);
+}
+#image{
+    margin-top: 30px;
+}
