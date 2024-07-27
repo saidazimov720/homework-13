@@ -1,7 +1,7 @@
 let names = [];
 const inputName = document.getElementById("inputName").value.trim();
 const nameList = document.getElementById("nameList");
-const nameSearch = document.getElementById("nameSearch");
+const nameSearch = document.getElementById("nameSearch").value.tolowercase();
 
 function nameAdd() {
     if (inputName) {
@@ -28,3 +28,7 @@ function nameSort(order) {
     displayNames()
 }
 
+function nameSearch() {
+    const filteredNames = names.filter(inputName => inputName.tolowercase().includes(nameSearch));
+    displayNames(filteredNames);
+}
