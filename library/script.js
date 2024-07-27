@@ -19,3 +19,12 @@ function displayNames(filteredNames = names) {
     });
 }
 
+function nameSort(order) {
+    if (order === 'asc') {
+        names.sort();
+    } else if(order === 'desc'){
+        names.sort().reverse();
+    }
+    displayNames()
+}
+
