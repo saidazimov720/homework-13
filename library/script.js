@@ -10,3 +10,12 @@ function nameAdd() {
         displayNames();
     }
 }
+function displayNames(filteredNames = names) {
+    nameList.innerHTML = '';
+    filteredNames.forEach(inputName => {
+        const li = document.createElement("li");
+        li.textContent = inputName;
+        nameList.appendChild(li);
+    });
+}
+
