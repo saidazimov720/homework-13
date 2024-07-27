@@ -36,5 +36,11 @@ button{
     border-radius: 5px;
     background-color: lightblue;
     color: whitesmoke;
+    cursor: pointer;
+}
+
+button:hover{
+    list-style-type: none;
+    padding: 0;
 }
 
