@@ -49,7 +49,7 @@ button:hover {
     margin-top: 30px;
 }
 
-.image-wrapper {
+.image_wrapper {
     margin-bottom: 30px;
     padding: 20px;
     border: 1px solid #ddd;
@@ -59,7 +59,7 @@ button:hover {
     text-align: center;
 }
 
-.displayed-image {
+.image_display {
     max-width: 100%;
     height: auto;
     border-radius: 4px;
