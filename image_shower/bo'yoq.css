@@ -1,73 +1,80 @@
-*{
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
 }
 
-.image{
+.container {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgb(175, 175, 214);
+    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
 }
 
-h1{
-    color: green;
+h1 {
+    color: #333;
+    text-align: center;
 }
 
-input[type="text"]{
-    width: 450px;
+input[type="text"] {
+    margin-left: 60px;
+    width: 80%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid yellow;
+    border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
 }
 
-button{
+button {
     padding: 10px 20px;
     font-size: 16px;
-    color: rgb(16, 90, 14);
-    background-color: lightblue;
+    color: #fff;
+    background-color: #007BFF;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3;
+    transition: background-color 0.3s;
 }
-button:hover{
-    color: whitesmoke;
-background-color: rgb(18, 18, 97);
+
+button:hover {
+    background-color: #0056b3;
 }
-#image{
+
+#imageContainer {
     margin-top: 30px;
 }
 
-.image-wrapper{
+.image-wrapper {
     margin-bottom: 30px;
     padding: 20px;
-    border: 1px solid #b55f5f;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    background-color: #d5b785;
+    background-color: #fafafa;
+    overflow: hidden;
+    text-align: center;
 }
 
-.displayer-image{
+.displayed-image {
     max-width: 100%;
     height: auto;
     border-radius: 4px;
+    display: inline-block;
 }
 
-.download-link{
+.download-link {
     display: block;
     margin-top: 10px;
     font-size: 14px;
-    color: #09315c;
+    color: #007BFF;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.download-link:hover{
-    color: #0e3c6e;
+.download-link:hover {
+    color: #0056b3;
 }
