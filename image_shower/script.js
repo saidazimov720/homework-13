@@ -12,6 +12,6 @@ function displayImage() {
         container.appendChild(img);
         image.appendChild(container);
     } else {
-        alert("Invalid Url")
+        alert("Invalid Url");
     }
 }
