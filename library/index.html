@@ -8,15 +8,14 @@
 </head>
 <body>
     <div class="con">
-        <h1>Name library</h1>
-        <input type="text" id="inputName" placeholder="Enter the name">
-        <button onclick="nameAdd()">Add name</button>
-        <input type="text" id="inputSearch" placeholder="Seach names">
-        <button onclick="nameSearch()">Search</button>
-        <button onclick="nameSort('asc')">Sort A-Z</button>
-        <button onclick="nameSort('desc')">Sort Z-A</button>
+        <h1>Name Manager</h1>
+        <input type="text" id="nameInput" placeholder="Enter a name">
+        <button onclick="addName()">Add Name</button>
+        <input type="text" id="searchInput" placeholder="Search names">
+        <button onclick="searchNames()">Search</button>
+        <button onclick="sortNames('asc')">Sort A-Z</button>
+        <button onclick="sortNames('desc')">Sort Z-A</button>
         <ul id="nameList"></ul>
-    </div>
     <script src="./script.js"></script>
 </body>
 </html>
