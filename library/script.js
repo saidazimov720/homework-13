@@ -1,7 +1,9 @@
 let names = [];
+const nameInput = document.getElementById('nameInput');
+const nameList = document.getElementById('nameList');
+const searchInput = document.getElementById('searchInput');
 
 function addName() {
-    const nameInput = document.getElementById('nameInput');
     const name = nameInput.value.trim();
 
     if (name) {
@@ -12,7 +14,6 @@ function addName() {
 }
 
 function displayNames(filteredNames = names) {
-    const nameList = document.getElementById('nameList');
     nameList.innerHTML = '';
     filteredNames.forEach(name => {
         const li = document.createElement('li');
@@ -31,7 +32,7 @@ function sortNames(order) {
 }
 
 function searchNames() {
-    const searchInput = document.getElementById('searchInput');
+    
     const query = searchInput.value.toLowerCase();
     const filteredNames = names.filter(name => name.toLowerCase().includes(query));
     displayNames(filteredNames);
